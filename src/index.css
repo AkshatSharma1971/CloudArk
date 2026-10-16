@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #07070A;
+    color: #f3f4f6;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+/* CloudArk Design Tokens & Glass Styles */
+.bg-canvas {
+  background-color: #07070A;
+}
+
+.bg-card-dark {
+  background-color: #111118;
+}
+
+.text-accent-cyan {
+  color: #00D5F5;
+}
+
+.text-accent-purple {
+  color: #A855F7;
+}
+
+.text-accent-green {
+  color: #22C55E;
+}
+
+.border-subtle {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel {
+  background: rgba(17, 17, 24, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
+}
+
+.glass-panel-subtle {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card {
+  background: #111118;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.6);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 213, 245, 0.4);
+  box-shadow: 0 0 25px -4px rgba(0, 213, 245, 0.25), 0 10px 30px -5px rgba(0, 0, 0, 0.8);
+  transform: translateY(-2px);
+}
+
+.glass-card-active {
+  background: #111118;
+  border: 1px solid #00D5F5;
+  box-shadow: 0 0 28px -4px rgba(0, 213, 245, 0.35);
+}
+
+.neon-glow-cyan {
+  box-shadow: 0 0 24px -2px rgba(0, 213, 245, 0.4);
+}
+
+.neon-glow-purple {
+  box-shadow: 0 0 24px -2px rgba(168, 85, 247, 0.4);
+}
+
+.cloudark-gradient-btn {
+  background: linear-gradient(135deg, #A855F7 0%, #6366f1 50%, #00D5F5 100%);
+  box-shadow: 0 0 20px -4px rgba(168, 85, 247, 0.5);
+  transition: all 0.25s ease;
+}
+
+.cloudark-gradient-btn:hover {
+  background: linear-gradient(135deg, #c084fc 0%, #818cf8 50%, #38bdf8 100%);
+  box-shadow: 0 0 25px 0px rgba(0, 213, 245, 0.6);
+  transform: scale(1.02);
+}
+
+.cloudark-gradient-btn:active {
+  transform: scale(0.98);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07070A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 213, 245, 0.5);
+}

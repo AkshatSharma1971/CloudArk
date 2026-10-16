@@ -1,0 +1,8 @@
+{
+  "name": "Remix CloudArk",
+  "description": "India-focused browser cloud gaming platform concept to play AAA games with zero downloads, pay-per-play INR pricing, and simulated low-latency streaming.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
